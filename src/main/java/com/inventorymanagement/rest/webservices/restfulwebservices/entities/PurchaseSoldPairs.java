@@ -5,31 +5,25 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.CreatedDate;
-
-import java.time.Instant;
-import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Purchase {
+@Table(uniqueConstraints = {@UniqueConstraint(columnNames = {"purchase_id", "shoes_id"})})
+public class PurchaseSoldPairs {
     @Id
     @GeneratedValue
     @JsonIgnore
     private int id;
 
-    @CreatedDate
-    private Instant createdDate;
-
-    private Double sum;
+    private int soldPairs;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JsonIgnore
-    private Worker worker;
+    private Purchase purchase;
 
-    @OneToMany(mappedBy = "purchase", orphanRemoval = true, cascade = CascadeType.PERSIST)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JsonIgnore
-    private List<PurchaseSoldPairs> purchaseSoldPairsList;
+    private Shoes shoes;
 }

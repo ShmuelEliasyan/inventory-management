@@ -37,4 +37,12 @@ public class Shoes {
     @OneToMany(mappedBy = "shoes", orphanRemoval = true, cascade = CascadeType.PERSIST)
     @JsonIgnore
     private List<ShoesAmount> shoesAmounts;
+
+    @OneToMany(mappedBy = "shoes", orphanRemoval = true, cascade = CascadeType.PERSIST)
+    @JsonIgnore
+    private List<ShoesPopularity> shoesPopularityList;
+
+    @OneToMany(mappedBy = "shoes", orphanRemoval = true, cascade = CascadeType.PERSIST)
+    @JsonIgnore
+    private List<PurchaseSoldPairs> purchaseSoldPairsList;
 }

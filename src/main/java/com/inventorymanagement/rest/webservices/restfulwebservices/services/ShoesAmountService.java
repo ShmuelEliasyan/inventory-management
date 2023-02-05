@@ -6,6 +6,7 @@ import com.inventorymanagement.rest.webservices.restfulwebservices.repositories.
 import com.inventorymanagement.rest.webservices.restfulwebservices.repositories.ShoesRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,10 +19,11 @@ public class ShoesAmountService {
     private ShoesAmountRepository shoesAmountRepository;
 
     @Autowired
-    private ShoesRepository shoesRepository;
+    @Lazy
+    private ShoesRepository shoesService;
 
     public void addShoesAmount(List<ShoesAmount> shoesAmountList, String barcode) {
-        Optional<Shoes> shoesOptional = shoesRepository.findByBarcode(barcode);
+        Optional<Shoes> shoesOptional = shoesService.findByBarcode(barcode);
 
         if (shoesOptional.isEmpty()) {
             throw new EntityNotFoundException("Shoes object with barcode = " + barcode + " is not found");

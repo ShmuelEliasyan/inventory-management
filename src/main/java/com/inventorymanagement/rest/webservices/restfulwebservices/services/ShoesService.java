@@ -23,7 +23,7 @@ public class ShoesService {
     @Autowired
     private ShoesAmountService shoesAmountService;
 
-    public void addShoesAmount(Shoes shoes) {
+    public void addShoes(Shoes shoes) {
         shoesRepository.save(shoes);
     }
 
@@ -62,6 +62,10 @@ public class ShoesService {
         return shoesCatalogDTO;
     }
 
+    public Optional<Shoes> findByBarcode(String barcode) {
+        return shoesRepository.findByBarcode(barcode);
+    }
+
     private int getTotalShoesAmount(ShoesCriteria shoesCriteria) {
         int totalShoesAmount;
 
@@ -72,7 +76,7 @@ public class ShoesService {
         } else {
             totalShoesAmount = (int) shoesRepository.getShoesCountByShoesSizes(shoesSizes);
         }
-        
+
         return totalShoesAmount;
     }
 

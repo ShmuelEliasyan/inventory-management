@@ -19,3 +19,5 @@ insert into shoes_amount(id,barcode,size,amount,shoes_id) values (1004,'1001','4
 insert into shoes_amount(id,barcode,size,amount,shoes_id) values (1005,'1002','43',2,12)
 insert into shoes_amount(id,barcode,size,amount,shoes_id) values (1006,'1003','42',2,13)
 insert into shoes_amount(id,barcode,size,amount,shoes_id) values (1007,'1004','45',2,14)
+insert into worker(id,name) values (1,'Moshe')
+insert into worker(id,name) values (2,'Shimon')

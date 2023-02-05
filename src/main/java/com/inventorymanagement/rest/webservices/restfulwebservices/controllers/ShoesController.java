@@ -22,7 +22,7 @@ public class ShoesController {
 
     @PostMapping("/add-shoes")
     public ResponseEntity<Shoes> addShoes(@RequestBody Shoes shoes) {
-        shoesService.addShoesAmount(shoes);
+        shoesService.addShoes(shoes);
         return new ResponseEntity<>(shoes, HttpStatus.CREATED);
     }
 
