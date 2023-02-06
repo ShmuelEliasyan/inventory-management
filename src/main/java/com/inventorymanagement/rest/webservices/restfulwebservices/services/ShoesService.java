@@ -9,7 +9,6 @@ import com.inventorymanagement.rest.webservices.restfulwebservices.utils.Paginat
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -81,9 +80,7 @@ public class ShoesService {
     }
 
     private List<Shoes> getShoes(ShoesCriteria shoesCriteria) {
-        Sort.Order order = new Sort.Order(shoesCriteria.getSortDirection(), shoesCriteria.getSortBy());
-        Sort sort = Sort.by(order);
-        PageRequest paging = PageRequest.of(shoesCriteria.getPage(), shoesCriteria.getPageSize(), sort);
+        PageRequest paging = PaginationUtils.getPageRequest(shoesCriteria.getSortDirection(), shoesCriteria.getSortBy(), shoesCriteria.getPage(), shoesCriteria.getPageSize());
 
         List<String> shoesSizes = shoesCriteria.getShoesSizes();
 

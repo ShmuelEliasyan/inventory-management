@@ -1,5 +1,6 @@
 package com.inventorymanagement.rest.webservices.restfulwebservices.utils;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -22,5 +23,13 @@ public class DateUtils {
         currentMonth.set(Calendar.SECOND, 0);
         Date currentMonthDate = currentMonth.getTime();
         return currentMonthDate;
+    }
+
+    public static String getMonthNameByDate(Date date) {
+        return new SimpleDateFormat("MMMM").format(date);
+    }
+
+    public static String getDayNameByDate(Date date) {
+        return new SimpleDateFormat("EEEE").format(date);
     }
 }
