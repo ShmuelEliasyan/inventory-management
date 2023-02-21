@@ -10,7 +10,7 @@ import java.util.Optional;
 
 @Repository
 public interface ShoesAmountRepository extends JpaRepository<ShoesAmount, Integer> {
-    public static final String FIND_ALL_SIZES = "SELECT DISTINCT SIZE FROM SHOES_AMOUNT";
+    public static final String FIND_ALL_SIZES = "select distinct size from shoes_amount";
 
     @Query(value = FIND_ALL_SIZES, nativeQuery = true)
     public List<String> findAllSizes();
