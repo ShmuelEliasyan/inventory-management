@@ -1,7 +1,7 @@
 package com.inventorymanagement.rest.webservices.restfulwebservices.controllers;
 
 import com.inventorymanagement.rest.webservices.restfulwebservices.dto.GraphsDTO;
-import com.inventorymanagement.rest.webservices.restfulwebservices.services.GraphsService;
+import com.inventorymanagement.rest.webservices.restfulwebservices.services.graphs.GraphsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,9 +15,8 @@ public class GraphsController {
     @Autowired
     private GraphsService graphsService;
 
-
     @GetMapping("/get-graphs")
-    public ResponseEntity<GraphsDTO> submitPurchase() {
+    public ResponseEntity<GraphsDTO> getGraphs() {
         GraphsDTO graphsDTO = graphsService.getGraphs();
         return new ResponseEntity<>(graphsDTO, HttpStatus.CREATED);
     }

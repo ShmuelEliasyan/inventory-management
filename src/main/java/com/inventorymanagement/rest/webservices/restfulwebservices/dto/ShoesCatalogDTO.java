@@ -1,6 +1,6 @@
 package com.inventorymanagement.rest.webservices.restfulwebservices.dto;
 
-import com.inventorymanagement.rest.webservices.restfulwebservices.entities.Shoes;
+import com.inventorymanagement.rest.webservices.restfulwebservices.entities.shoes.Shoes;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

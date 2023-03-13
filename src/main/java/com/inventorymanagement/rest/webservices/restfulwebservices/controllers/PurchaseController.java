@@ -1,7 +1,7 @@
 package com.inventorymanagement.rest.webservices.restfulwebservices.controllers;
 
 import com.inventorymanagement.rest.webservices.restfulwebservices.dto.PurchaseDTO;
-import com.inventorymanagement.rest.webservices.restfulwebservices.services.PurchaseService;
+import com.inventorymanagement.rest.webservices.restfulwebservices.services.purchase.PurchaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

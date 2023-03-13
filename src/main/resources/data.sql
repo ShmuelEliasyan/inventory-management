@@ -71,69 +71,69 @@ insert into worker(id, name)
 values (6, 'Mor');
 
 insert into month_sales(id, date, sum)
-values (1, '2023-02-01', 58000.0);
+values (1001, '2023-03-01', 58000.0);
 insert into month_sales(id, date, sum)
-values (2, '2023-01-01', 38000.0);
+values (1002, '2023-01-01', 38000.0);
 insert into month_sales(id, date, sum)
-values (3, '2022-12-01', 50000.0);
+values (1003, '2022-12-01', 50000.0);
 insert into month_sales(id, date, sum)
-values (4, '2022-11-01', 52000.0);
+values (1004, '2022-11-01', 52000.0);
 insert into month_sales(id, date, sum)
-values (5, '2022-10-01', 36000.0);
+values (1005, '2022-10-01', 36000.0);
 insert into month_sales(id, date, sum)
-values (6, '2022-09-01', 29000.0);
+values (1006, '2022-09-01', 29000.0);
 
 insert into day_sales(id, date, sum)
-values (1, '2023-02-06', 5300.0);
+values (1000, '2023-03-06', 5300.0);
 insert into day_sales(id, date, sum)
-values (2, '2023-02-05', 4000.0);
+values (1002, '2023-03-05', 4000.0);
 insert into day_sales(id, date, sum)
-values (3, '2023-02-04', 4500.0);
+values (1003, '2023-03-04', 4500.0);
 insert into day_sales(id, date, sum)
-values (4, '2023-02-03', 3800.0);
+values (1004, '2023-03-03', 3800.0);
 insert into day_sales(id, date, sum)
-values (5, '2023-02-02', 2500.0);
+values (1005, '2023-03-02', 2500.0);
 insert into day_sales(id, date, sum)
-values (6, '2023-02-01', 3500.0);
+values (1006, '2023-03-01', 3500.0);
 insert into day_sales(id, date, sum)
-values (7, '2023-01-31', 2000.0);
+values (1007, '2023-01-31', 2000.0);
 
 insert into shoes_popularity(id, date, sold_pairs, shoes_id)
-values (1, '2023-02-01', 2000, 10);
+values (1001, '2023-03-01', 2000, 10);
 insert into shoes_popularity(id, date, sold_pairs, shoes_id)
-values (2, '2023-02-01', 2100, 11);
+values (1002, '2023-03-01', 2100, 11);
 insert into shoes_popularity(id, date, sold_pairs, shoes_id)
-values (3, '2023-02-01', 2200, 12);
+values (1003, '2023-03-01', 2200, 12);
 insert into shoes_popularity(id, date, sold_pairs, shoes_id)
-values (4, '2023-02-01', 2300, 13);
+values (1004, '2023-03-01', 2300, 13);
 insert into shoes_popularity(id, date, sold_pairs, shoes_id)
-values (5, '2023-02-01', 2400, 14);
+values (1005, '2023-03-01', 2400, 14);
 insert into shoes_popularity(id, date, sold_pairs, shoes_id)
-values (6, '2023-02-01', 2500, 15);
+values (1006, '2023-03-01', 2500, 15);
 insert into shoes_popularity(id, date, sold_pairs, shoes_id)
-values (7, '2023-02-01', 2600, 16);
+values (1007, '2023-03-01', 2600, 16);
 insert into shoes_popularity(id, date, sold_pairs, shoes_id)
-values (8, '2023-02-01', 2700, 17);
+values (1008, '2023-03-01', 2700, 17);
 insert into shoes_popularity(id, date, sold_pairs, shoes_id)
-values (9, '2023-02-01', 2800, 18);
+values (1009, '2023-03-01', 2800, 18);
 insert into shoes_popularity(id, date, sold_pairs, shoes_id)
-values (10, '2023-02-01', 2900, 19);
+values (1010, '2023-03-01', 2900, 19);
 insert into shoes_popularity(id, date, sold_pairs, shoes_id)
-values (11, '2023-02-01', 3000, 20);
+values (1011, '2023-03-01', 3000, 20);
 insert into shoes_popularity(id, date, sold_pairs, shoes_id)
-values (12, '2023-02-01', 3100, 21);
+values (1012, '2023-03-01', 3100, 21);
 insert into shoes_popularity(id, date, sold_pairs, shoes_id)
-values (13, '2023-02-01', 3200, 22);
+values (1013, '2023-03-01', 3200, 22);
 
 insert into worker_sales(id, date, worker_id, sum)
-values (1, '2023-02-01', 1, 22000.0);
+values (1001, '2023-03-01', 1, 22000.0);
 insert into worker_sales(id, date, worker_id, sum)
-values (2, '2023-02-01', 2, 32000.0);
+values (1002, '2023-03-01', 2, 32000.0);
 insert into worker_sales(id, date, worker_id, sum)
-values (3, '2023-02-01', 3, 30000.0);
+values (1003, '2023-03-01', 3, 30000.0);
 insert into worker_sales(id, date, worker_id, sum)
-values (4, '2023-02-01', 4, 18000.0);
+values (1004, '2023-03-01', 4, 18000.0);
 insert into worker_sales(id, date, worker_id, sum)
-values (5, '2023-02-01', 5, 35000.0);
+values (1005, '2023-03-01', 5, 35000.0);
 insert into worker_sales(id, date, worker_id, sum)
-values (6, '2023-02-01', 6, 27000.0);
+values (1006, '2023-03-01', 6, 27000.0);
